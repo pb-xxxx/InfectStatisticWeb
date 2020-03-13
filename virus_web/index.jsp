@@ -1,7 +1,11 @@
+<%@page import="dao.ProvinceDAOImpl"%>
+<%@page import="dao.ProvinceDAO,pojo.Province"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>221701303_裴博</title>
+<html>
+<head>
+<title>221701303_裴博</title>
         <meta charset ="utf-8" />
         <link href="main.css" type="text/css" rel="stylesheet"/> 
         <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
@@ -19,9 +23,15 @@
             });
             });
         </script> 
-    </head>
-
-    <body style="text-align: center;">
+</head>
+<body style="text-align: center;">
+<%
+if(request.getAttribute("province")==null){
+	%>
+	<jsp:forward page = "/provinceServlet"></jsp:forward>
+<% 
+}
+%>
         <div id="base">
             <!--封面-->
             <div class="cover" id="map_clock">
@@ -29,37 +39,40 @@
                     <img id="header_img" class="img " src="image/u0.png" width="100%">
                     <h1>科学防护 共渡难关</h1>
                     <h2>肺炎疫情实时动态播报</h2>
-                    
                 </div>
             </div>
-           <form class="form_date" action="date.jsp" method="POST" >
-                        日期: <input type="text" name="user_date" placeholder="输入格式：xxxx.xx.xx" />
+           <form class="form_date" action="/provinceServlet" method="POST" >
+                            选择日期: <input type="text" name="date" placeholder="输入格式：xxxx.xx.xx" />
+               <input type="submit" value="提交"/>
             </form>
             <div class="cover_cards">
                 <div class="cover_data_china noNewsScroll">
+                <% 
+                Province pce = (Province)request.getAttribute("province");
+                %>
                     <div class="cover_confirm">
                         <h4>累计确诊</h4>
-                        <div class="number">-</div>
+                        <div class="number"><%=pce.getipcount() %></div>
                       </div>
                       <div class="cover_dead">
                         <h4>累计死亡</h4>
-                        <div class="number">-</div>
+                        <div class="number"><%=pce.getdeadcount() %></div>
                       </div>
                       <div class="cover_heal">
                         <h4>累计治愈</h4>
-                        <div class="number">-</div>
+                        <div class="number"><%=pce.getcurecount() %></div>
                       </div>
                       <div class="cover_today_confirm">
-                        <h4>现有确诊</h4>
-                        <div class="number">22534</div>
+                        <h4>累计疑似</h4>
+                        <div class="number"><%=pce.getspcount() %></div>
                       </div>
                       <div class="cover_severe">
                         <h4>现有重症</h4>
                         <div class="number">11234</div>
                       </div>
                       <div class="cover_suspect">
-                        <h4>现有疑似</h4>
-                        <div class="number">-</div>
+                        <h4>现有确诊</h4>
+                        <div class="number">22534</div>
                       </div>
                       <div class="cover_time">
                           <h5>截止日期：</h5>
@@ -88,10 +101,8 @@
 
            
         </div>
-        <script src="./js/echarts.min.js" charset="utf-8"></script>
-        <script src="./js/china.js" charset="utf-8"></script>
-        <script src="./js/nation.js" charset="utf-8"></script>
-        <script src="./js/nation1.js" charset="utf-8"></script>
-        
-    </body>
+        <script src="js/echarts.min.js" charset="utf-8"></script>
+        <script src="js/china.js" charset="utf-8"></script>
+        <script src="js/nation.js" charset="utf-8"></script>
+        <script src="js/nation1.js" charset="utf-8"></script>
 </html>

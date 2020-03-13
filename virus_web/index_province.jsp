@@ -1,11 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>221701303_裴博</title>
+<html>
+<head>
+<title>221701303_裴博</title>
         <meta charset ="utf-8" />
         <link href="main_peovince.css" type="text/css" rel="stylesheet"/> 
-        <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
-        </script> 
+        <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                 $("div#u4").hide();
@@ -27,9 +28,8 @@
             });
             });
         </script> 
-    </head>
-
-    <body style="text-align: center;">
+</head>
+<body style="text-align: center;">
         <div id="base">
             <!--封面-->
             <div class="cover" id="map_clock">
@@ -99,9 +99,9 @@
 
             </div>
         </div>
-        <script src="./js/echarts.min.js" charset="utf-8"></script>
-    <script src="./js/chart.js" charset="utf-8"></script>
-    <script src="./js/chart1.js" charset="utf-8"></script>
-    <script src="./js/chart2.js" charset="utf-8"></script>
+        <script src="js/echarts.min.js" charset="utf-8"></script>
+    <script src="js/chart.js" charset="utf-8"></script>
+    <script src="js/chart1.js" charset="utf-8"></script>
+    <script src="js/chart2.js" charset="utf-8"></script>
     </body>
 </html>
