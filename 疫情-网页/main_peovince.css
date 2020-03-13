@@ -1,0 +1,139 @@
+.cover{
+    background-color:#fff;
+    position:relative;
+    border-bottom:2px solid #eee
+}
+.cover h1{
+    font:700 50px/50px -apple-system-font,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial;
+    top:122px
+}
+.cover h1,.cover h2{
+    color:#fff;
+    position:absolute;
+    left:46px
+}
+.cover h2{
+    font:36px/36px -apple-system-font,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial;
+    top:184px
+}
+.cover_cards{
+    position:relative;
+    z-index:5;width:688px;
+    margin:-180px auto 30px;
+    background:#fff;border-radius:
+    16px;box-shadow:0 2px 20px rgba(0,0,0,.1)
+}
+
+.cover_cards .cover_time{
+    clear:both;
+    padding:0 0 22px;
+    margin:0 32px;
+    font-size:22px;
+    color:#a9a9a9;
+    font-weight:400;
+    border-bottom:1px solid #e8e8e8
+}
+.cover_cards .cover_time span{
+    float:right;
+    padding-left:30px;
+    width:auto;
+    height:40px;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAAsVBMVEUAAACZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZn////Y2NjMzMy/v7/s7OzDw8OgoKDl5eXLy8vGxsaoqKj5+fny8vLp6enU1NS2travr6/29vbv7++6urqsrKzj4+Pd3d3a2tqAPz7CAAAAI3RSTlMAFP6c17tRNvnz38SMe29pZEk4MSXo3s+qopaTg3pfXkAnHDFePYoAAADcSURBVBjTVY5XloMwDEVlanqf3meMMTUBJnX/C4v9BIfkfsh698iyqeV3/vbsTkO6Ze07ujrLrBl99fLDkX/MTvmCGFdvoUDmsZ5pxDJNY+ixlWK4t0EmeVQo26lPYyeRbbdJaepR2t2Pxo6wNMpRMdGEtCmwNU1tzWGzKS1rWBAneE+6FBxupMR5eaGw6WRpJkH1SsLpbKXaRs+Jxju0+ABTbIgWPNIjfTJ4klPO57+ztnY1OCEeFW99JxAMMAX22qWWladivh0NZ9SzeErqQ108TATdIb6D5U8XroO2LEseFZAnAAAAAElFTkSuQmCC) no-repeat left 2px;
+    background-size:21px 21px
+}
+.cover_cards .cover_data_china{
+    position:relative;
+    padding-top:34px;
+    min-height:340px
+}
+.cover_cards .cover_data_china.hidden{display:none}
+.cover_cards .cover_data_china{min-height:470px}
+.cover_cards .cover_data_china.noNewsScroll{min-height:240px}
+
+
+
+
+
+
+
+
+.cover_cards .cover_confirm,.cover_cards .cover_dead,.cover_cards .cover_heal,
+.cover_cards .cover_severe,.cover_cards .cover_suspect,.cover_cards .cover_today_confirm{
+    float:left;
+    position:relative;
+    width:229px;
+    min-height:116px;
+    margin-bottom:34px
+}
+.cover_cards .cover_confirm h4,.cover_cards .cover_dead h4,.cover_cards .cover_heal h4,
+.cover_cards .cover_severe h4,.cover_cards .cover_suspect h4,.cover_cards .cover_today_confirm h4{
+    text-align:center;
+    font:20px/24px -apple-system-font,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial;
+    font-weight:600;
+    color:#333
+}
+.cover_cards .cover_confirm .number,.cover_cards .cover_dead .number,.cover_cards .cover_heal .number,
+.cover_cards .cover_severe .number,.cover_cards .cover_suspect .number,.cover_cards .cover_today_confirm .number{
+    font:700 44px/74px DIN Alternate,din_alternate_bold,-apple-system-font,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial;
+    text-align:center
+}
+.cover_cards .cover_confirm .number{color:#a31d13}
+.cover_cards .cover_today_confirm .number{color:#e44a3d}
+.cover_cards .cover_severe .number{color:#791618}
+.cover_cards .cover_suspect .number{color:#ffa352}
+.cover_cards .cover_dead .number{color:#333}
+.cover_cards .cover_heal .number{color:#34aa70}
+
+.map_controls{
+    width:750px;
+    margin-top:20px;
+    margin-bottom:10px;
+    overflow:hidden
+}
+
+.wrap{
+    margin-left: 250px;
+    text-align:center;
+}
+#累计确诊趋势 {
+    background-color: #4CAF50; /* Green */
+    border-radius: 12px;
+    width: 200px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#新增确诊趋势:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#累计确诊趋势:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#累计治愈:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#新增确诊趋势 {
+    background-color: #4CAF50; /* Green */
+    border-radius: 12px;
+    width: 200px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#累计治愈 {
+    background-color: #4CAF50; /* Green */
+    border-radius: 12px;
+    width: 210px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
