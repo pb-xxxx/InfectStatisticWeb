@@ -5,7 +5,7 @@
         <meta charset ="utf-8" />
         <link href="main.css" type="text/css" rel="stylesheet"/> 
         <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
-        </script> 
+        
         <script type="text/javascript">
             $(document).ready(function(){
                 $("div#u39").hide();
@@ -29,8 +29,12 @@
                     <img id="header_img" class="img " src="image/u0.png" width="100%">
                     <h1>科学防护 共渡难关</h1>
                     <h2>肺炎疫情实时动态播报</h2>
+                    
                 </div>
             </div>
+           <form class="form_date" action="date.jsp" method="POST" >
+                        日期: <input type="text" name="user_date" placeholder="输入格式：xxxx.xx.xx" />
+            </form>
             <div class="cover_cards">
                 <div class="cover_data_china noNewsScroll">
                     <div class="cover_confirm">
@@ -47,17 +51,19 @@
                       </div>
                       <div class="cover_today_confirm">
                         <h4>现有确诊</h4>
-                        <div class="number">-</div>
+                        <div class="number">22534</div>
                       </div>
                       <div class="cover_severe">
                         <h4>现有重症</h4>
-                        <div class="number">-</div>
+                        <div class="number">11234</div>
                       </div>
                       <div class="cover_suspect">
                         <h4>现有疑似</h4>
                         <div class="number">-</div>
                       </div>
-                      <div class="cover_time">　</div>
+                      <div class="cover_time">
+                          <h5>截止日期：</h5>
+                      </div>
 
                 </div>
             </div>
@@ -75,17 +81,17 @@
                 </div>
                 
                 </div>
+                
             </div>
 
 
 
-            <div id="footer">
-
-            </div>
+           
         </div>
         <script src="./js/echarts.min.js" charset="utf-8"></script>
         <script src="./js/china.js" charset="utf-8"></script>
         <script src="./js/nation.js" charset="utf-8"></script>
         <script src="./js/nation1.js" charset="utf-8"></script>
+        
     </body>
 </html>

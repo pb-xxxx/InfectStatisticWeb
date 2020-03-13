@@ -16,12 +16,21 @@
     font:36px/36px -apple-system-font,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial;
     top:184px
 }
+.form_date{
+    background:#fff;
+    position:absolute;
+    left:300px;
+    z-index:6;
+    width:300px;  
+    margin:-240px auto 30px;  
+}
 .cover_cards{
     position:relative;
     z-index:5;width:688px;
-    margin:-180px auto 30px;
-    background:#fff;border-radius:
-    16px;box-shadow:0 2px 20px rgba(0,0,0,.1)
+    margin:-250px auto 30px;
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 2px 20px rgba(0,0,0,.1)
 }
 
 .cover_cards .cover_time{

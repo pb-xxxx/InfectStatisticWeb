@@ -82,106 +82,106 @@ china_chart.on('click', function (param) {
         if (selected) {
             switch(selected){
                 case '北京':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '天津':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '上海':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '重庆':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '河北':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '河南':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '云南':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '辽宁':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;    
                 case '黑龙江':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '湖南':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '安徽':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '山东':
-                     location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                     location.href = "index_province.html";
                      break;
                 case '新疆':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '江苏':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '浙江':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '江西':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '湖北':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '广西':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '甘肃':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '山西':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '内蒙古':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '陕西':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '吉林':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '福建':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;    
                 case '贵州':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '广东':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '青海':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '西藏':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '四川':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '宁夏':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '海南':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '台湾':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '香港':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1";
+                    location.href = "index_province.html";
                     break;
                 case '澳门':
-                    location.href = "file:///C:/Users/Lenovo/Desktop/新建文件夹%20(2)/index.html#id=641hn8&p=page_1"; 
+                    location.href = "index_province.html"; 
                     break;  
                 default:
                     break;
