@@ -3,8 +3,10 @@ package dao;
 
 import pojo.Province;
 public interface ProvinceDAO {
-      Province getData(String Pname,String date);
 
-	Province getNationData();
+	Province getDefaultPceData();
+	Province getPceData(String date);
+	Province getDefaultNationData();
+	Province getNationData(String date);
 
 }
