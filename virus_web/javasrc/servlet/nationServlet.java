@@ -14,15 +14,15 @@ import pojo.Province;
 /**
  * Servlet implementation class provinServlet
  */
-@WebServlet("/dateServlet")
-public class dateServlet extends HttpServlet {
+@WebServlet("/nationServlet")
+public class nationServlet extends HttpServlet {
 	private ProvinceDAO provinceDAO = new ProvinceDAOImpl();
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public dateServlet() {
+    public nationServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,19 +32,10 @@ public class dateServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.setCharacterEncoding("utf-8");
-		String nationdate = request.getParameter("nationdate");
-		String provincedate = request.getParameter("provincedate");
-		if(nationdate != null) {
-			Province nation = getNationData(nationdate);
+			Province nation = getDefaultNationData();
 			request.setAttribute("nation", nation);
 			request.getRequestDispatcher("index.jsp").forward(request,response);
-		}
-		else {
-			Province province = getProvinceData(provincedate);
-			request.setAttribute("province", province);
-			request.getRequestDispatcher("index_province.jsp").forward(request,response);
-		}
+		
 		
 	}
 
@@ -55,12 +46,8 @@ public class dateServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-	private Province getNationData(String str) {
-		Province pce = provinceDAO.getNationData(str);
-		return pce;
-	}
-	private Province getProvinceData(String str) {
-		Province pce = provinceDAO.getPceData(str);
+	private Province getDefaultNationData() {
+		Province pce = provinceDAO.getDefaultNationData();
 		return pce;
 	}
 
