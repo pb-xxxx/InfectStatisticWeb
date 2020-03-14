@@ -1,7 +1,7 @@
 # InfectStatisticWeb
 ## 作业链接
 
-+ [作业链接]: https://edu.cnblogs.com/campus/fzu/2020SpringW/homework/10456
++ https://edu.cnblogs.com/campus/fzu/2020SpringW/homework/10456
 
 
 
