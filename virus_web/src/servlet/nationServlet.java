@@ -34,6 +34,7 @@ public class nationServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 			Province nation = getDefaultNationData();
 			request.setAttribute("nation", nation);
+			request.setAttribute("nationdate", "2020.02.02");
 			request.getRequestDispatcher("index.jsp").forward(request,response);
 		
 		

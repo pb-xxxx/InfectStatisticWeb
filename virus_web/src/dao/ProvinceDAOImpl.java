@@ -2,7 +2,7 @@ package dao;
 import pojo.Province;
 import util.DBUtil;
 
-import java.io.Reader;
+
 import java.sql.*;
 
 

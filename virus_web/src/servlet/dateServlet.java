@@ -38,11 +38,13 @@ public class dateServlet extends HttpServlet {
 		if(nationdate != null) {
 			Province nation = getNationData(nationdate);
 			request.setAttribute("nation", nation);
+			request.setAttribute("nationdate", nationdate);
 			request.getRequestDispatcher("index.jsp").forward(request,response);
 		}
 		else {
 			Province province = getProvinceData(provincedate);
 			request.setAttribute("province", province);
+			request.setAttribute("provincedate", provincedate);
 			request.getRequestDispatcher("index_province.jsp").forward(request,response);
 		}
 		

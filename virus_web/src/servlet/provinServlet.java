@@ -35,6 +35,7 @@ public class provinServlet extends HttpServlet {
 		
 			Province province = getDefaultProvinceData();
 			request.setAttribute("province", province);
+			request.setAttribute("provincedate", "2020.02.02");
 			request.getRequestDispatcher("index_province.jsp").forward(request,response);
 	}
 
