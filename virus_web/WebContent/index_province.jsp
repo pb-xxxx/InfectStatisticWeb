@@ -13,14 +13,14 @@
             $(document).ready(function(){
                 $("div#u4").hide();
                 $("div#u5").hide();
-            $("#新增确诊趋势").click(function(){
-            $("div#u4").hide();
+            $("#累计疑似趋势").click(function(){
+            $("div#u4").show();
             $("div#u5").hide();
-            $("div#u3").show();
+            $("div#u3").hide();
             });
             $("#累计确诊趋势").click(function(){
-            $("div#u3").hide();
-            $("div#u4").show();
+            $("div#u3").show();
+            $("div#u4").hide();
             $("div#u5").hide();
             });
             $("#累计治愈").click(function(){
@@ -46,6 +46,7 @@ if(request.getAttribute("province")==null){
                     <img id="header_img" class="img " src="image/u0.png" width="100%">
                     <h1>科学防护 共渡难关</h1>
                     <h2>肺炎疫情实时动态播报</h2>
+                    <h3>湖北</h3>
                 </div>
             </div>
             <form class="form_date" action="dateServlet" method="POST" >
@@ -56,6 +57,7 @@ if(request.getAttribute("province")==null){
                 <div class="cover_data_china noNewsScroll">
                 <% 
                 Province pce = (Province)request.getAttribute("province");
+                String date = (String)request.getAttribute("provincedate");
                 %>
                     <div class="cover_confirm">
                         <h4>累计确诊</h4>
@@ -82,7 +84,7 @@ if(request.getAttribute("province")==null){
                         <div class="number">1109</div>
                       </div>
                       <div class="cover_time">
-                        <h5>截止日期：</h5>
+                        <h5>截止日期：<%=date %></h5>
                     </div>
 
 
@@ -94,9 +96,9 @@ if(request.getAttribute("province")==null){
                 <div class="wrap" style="height: 700px;">
                     <div class="map_controls">
                     
-                    <button id="新增确诊趋势" type="button">累计确诊趋势</button>
                     <button id="累计确诊趋势" type="button">累计确诊趋势</button>
-                    <button id="累计治愈" type="button">累计确诊治愈/死亡</button>
+                    <button id="累计疑似趋势" type="button">累计疑似趋势</button>
+                    <button id="累计治愈" type="button">累计治愈/死亡趋势</button>
                     
                     <div id="u3" style="width: 500px;height: 500px; text-align: center; margin: auto;"></div>
                     <div id="u4" style="width: 500px;height: 500px; text-align: center; margin: auto;"></div>

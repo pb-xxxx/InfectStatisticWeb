@@ -50,6 +50,7 @@ if(request.getAttribute("nation")==null){
                 <div class="cover_data_china noNewsScroll">
                 <% 
                 Province pce = (Province)request.getAttribute("nation");
+                String date = (String)request.getAttribute("nationdate");
                 %>
                     <div class="cover_confirm">
                         <h4>累计确诊</h4>
@@ -76,7 +77,7 @@ if(request.getAttribute("nation")==null){
                         <div class="number">22534</div>
                       </div>
                       <div class="cover_time">
-                          <h5>截止日期：</h5>
+                          <h5>截止日期:<%= date%></h5>
                       </div>
 
                 </div>
