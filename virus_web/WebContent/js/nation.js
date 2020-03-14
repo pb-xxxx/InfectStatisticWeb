@@ -82,106 +82,106 @@ china_chart.on('click', function (param) {
         if (selected) {
             switch(selected){
                 case '北京':
-                    location.href = "index_province.html";
+                	location.href = "index_province.jsp";
                     break;
                 case '天津':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '上海':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '重庆':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '河北':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '河南':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '云南':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '辽宁':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;    
                 case '黑龙江':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '湖南':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '安徽':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '山东':
-                     location.href = "index_province.html";
+                     location.href = "index_province.jsp";
                      break;
                 case '新疆':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '江苏':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '浙江':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '江西':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '湖北':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '广西':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '甘肃':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '山西':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '内蒙古':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '陕西':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '吉林':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '福建':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;    
                 case '贵州':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '广东':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '青海':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '西藏':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '四川':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '宁夏':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '海南':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '台湾':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '香港':
-                    location.href = "index_province.html";
+                    location.href = "index_province.jsp";
                     break;
                 case '澳门':
-                    location.href = "index_province.html"; 
+                    location.href = "index_province.jsp"; 
                     break;  
                 default:
                     break;

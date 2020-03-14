@@ -32,10 +32,10 @@ public class provinServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.setCharacterEncoding("utf-8");
-		Province province = getDefaultNationData();
-		request.setAttribute("province", province);
-		request.getRequestDispatcher("index.jsp").forward(request,response);
+		
+			Province province = getDefaultProvinceData();
+			request.setAttribute("province", province);
+			request.getRequestDispatcher("index_province.jsp").forward(request,response);
 	}
 
 	/**
@@ -45,9 +45,8 @@ public class provinServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-	private Province getDefaultNationData() {
-		Province pce = provinceDAO.getDefaultNationData();
-		return pce;
+	private Province getDefaultProvinceData() {
+		Province province = provinceDAO.getDefaultPceData();
+		return province;
 	}
-
 }

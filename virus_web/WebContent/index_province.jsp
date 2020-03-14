@@ -1,3 +1,5 @@
+<%@page import="dao.ProvinceDAOImpl"%>
+<%@page import="dao.ProvinceDAO,pojo.Province"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -30,6 +32,13 @@
         </script> 
 </head>
 <body style="text-align: center;">
+<%
+if(request.getAttribute("province")==null){
+	%>
+	<jsp:forward page = "/provinceServlet"></jsp:forward>
+<% 
+}
+%>
         <div id="base">
             <!--封面-->
             <div class="cover" id="map_clock">
@@ -39,34 +48,38 @@
                     <h2>肺炎疫情实时动态播报</h2>
                 </div>
             </div>
-            <form class="form_date" action="date.jsp" method="POST" >
-                日期: <input type="text" name="user_date" placeholder="输入格式：xxxx.xx.xx" />
+            <form class="form_date" action="dateServlet" method="POST" >
+                输入日期: <input type="text" name="provincedate" placeholder="输入格式：xxxx.xx.xx" />
+               <input type="submit" value="提交"/>
             </form>
             <div class="cover_cards">
                 <div class="cover_data_china noNewsScroll">
+                <% 
+                Province pce = (Province)request.getAttribute("province");
+                %>
                     <div class="cover_confirm">
                         <h4>累计确诊</h4>
-                        <div class="number">-</div>
+                        <div class="number"><%=pce.getipcount() %></div>
                       </div>
                       <div class="cover_dead">
                         <h4>累计死亡</h4>
-                        <div class="number">-</div>
+                        <div class="number"><%=pce.getdeadcount() %></div>
                       </div>
                       <div class="cover_heal">
                         <h4>累计治愈</h4>
-                        <div class="number">-</div>
+                        <div class="number"><%=pce.getcurecount() %></div>
                       </div>
                       <div class="cover_today_confirm">
-                        <h4>现有确诊</h4>
-                        <div class="number">1109</div>
+                        <h4>累计疑似</h4>
+                        <div class="number"><%=pce.getspcount() %></div>
                       </div>
                       <div class="cover_severe">
                         <h4>现有重症</h4>
                         <div class="number">343</div>
                       </div>
                       <div class="cover_suspect">
-                        <h4>累计疑似</h4>
-                        <div class="number">-</div>
+                        <h4>现有确诊</h4>
+                        <div class="number">1109</div>
                       </div>
                       <div class="cover_time">
                         <h5>截止日期：</h5>
@@ -81,7 +94,7 @@
                 <div class="wrap" style="height: 700px;">
                     <div class="map_controls">
                     
-                    <button id="新增确诊趋势" type="button">新增确证趋势</button>
+                    <button id="新增确诊趋势" type="button">累计确诊趋势</button>
                     <button id="累计确诊趋势" type="button">累计确诊趋势</button>
                     <button id="累计治愈" type="button">累计确诊治愈/死亡</button>
                     

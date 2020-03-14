@@ -26,9 +26,9 @@
 </head>
 <body style="text-align: center;">
 <%
-if(request.getAttribute("province")==null){
+if(request.getAttribute("nation")==null){
 	%>
-	<jsp:forward page = "/provinceServlet"></jsp:forward>
+	<jsp:forward page = "/nationServlet"></jsp:forward>
 <% 
 }
 %>
@@ -41,14 +41,15 @@ if(request.getAttribute("province")==null){
                     <h2>肺炎疫情实时动态播报</h2>
                 </div>
             </div>
-           <form class="form_date" action="/provinceServlet" method="POST" >
-                            选择日期: <input type="text" name="date" placeholder="输入格式：xxxx.xx.xx" />
+           <form class="form_date" action="dateServlet" method="POST"  >
+                            输入日期: <input type="text" name="nationdate" placeholder="输入格式：2020.xx.xx" />
                <input type="submit" value="提交"/>
-            </form>
+               
+           </form>
             <div class="cover_cards">
                 <div class="cover_data_china noNewsScroll">
                 <% 
-                Province pce = (Province)request.getAttribute("province");
+                Province pce = (Province)request.getAttribute("nation");
                 %>
                     <div class="cover_confirm">
                         <h4>累计确诊</h4>
