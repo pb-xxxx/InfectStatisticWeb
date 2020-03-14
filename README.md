@@ -45,6 +45,7 @@
 
   + 配置好eclipse for javaEE ，tomcat和mysql，新建   疫情统计 数据库
   + 打开eclipse for javaEE，新建Dynamic Web Project名为疫情可视化,新建好后，将仓库sql文件夹下的sql文件导入到疫情统计数据库，并将仓库src文件夹覆盖 疫情可视化项目/Java Resources/src，将仓库webcontent文件夹覆盖  疫情可视化/WebContent  
+  + 启动tomcat服务器
   + 在浏览器导航栏输入http://localhost:8080/疫情可视化/index.jsp
 
 
